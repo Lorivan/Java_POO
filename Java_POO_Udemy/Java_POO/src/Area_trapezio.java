@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class Area_trapezio {
     public static void main (String[] args){
         double b,B,h,area;
