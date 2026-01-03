@@ -1,5 +1,5 @@
+package Exercicios;
 
-import com.sun.source.tree.ImportTree;
 import java.util.Locale;
 public class Aula_Exercicio001 {
     public static void  main (String [] args){
