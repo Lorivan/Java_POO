@@ -4,7 +4,19 @@ public class Product {
 
     public static String name;
     public static double price;
-    public static Integer quantity;
+    public static int quantity;
+
+    public Product(String name,double price,int quantity){
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+
+    }
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
 
     public double totalValueInStock() {
         return price * quantity;

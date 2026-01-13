@@ -1,8 +1,11 @@
 package application;
 import entidades.Product;
 
+import javax.xml.namespace.QName;
 import java.util.Locale;
 import java.util.Scanner;
+
+import static entidades.Product.price;
 
 public class Program {
     public static void main (String [] args) {
@@ -10,16 +13,13 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc  = new Scanner(System.in);
 
-        Product  product = new Product();
         System.out.println("Enter product data ");
         System.out.print("Name ");
-        product.name = sc.nextLine();
+        String name = sc.nextLine();
         System.out.print("Price: ");
-        product.price = sc.nextDouble();
-        System.out.print("Qunatiy in Stock: ");
-        product.quantity = sc.nextInt();
-
-        System.out.println(product.name + " , " + product.price + " , " + product.quantity);
+        double price = sc.nextDouble();
+        Product product = new Product(name, price);
+        System.out.println(product.name + " , " + price + " , " + product.quantity);
 
         System.out.println();
         System.out.println(" Product data : " + product);
