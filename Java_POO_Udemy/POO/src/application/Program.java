@@ -1,11 +1,8 @@
 package application;
-import entidades.Product;
+import entities.Product;
 
-import javax.xml.namespace.QName;
 import java.util.Locale;
 import java.util.Scanner;
-
-import static entidades.Product.price;
 
 public class Program {
     public static void main (String [] args) {
